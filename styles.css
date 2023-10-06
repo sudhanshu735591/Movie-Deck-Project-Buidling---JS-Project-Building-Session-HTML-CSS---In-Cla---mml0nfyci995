@@ -1,1 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
 
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.container{
+    background-color: darkblue;
+    padding: 4px;
+    color:  white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.searchBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.inputbox{
+    height: 30px;
+    width: 20rem;
+    margin: 10px;
+    border: 2px solid grey;
+}
+
+button{
+    height: 33px;
+    width: 6rem;
+    border-radius: 5px;
+    background: rgb(33, 44, 33);
+    color: white;
+    cursor: pointer;
+}
+
+.sortBox{
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.sortByDate{
+    width: 13rem;
+    background: red;
+    font-weight: bold;
+}
+
+.sortByRating{
+    width: 13rem;
+    background: red;
+    font-weight: bold;
+}
+
+.font{
+    font-weight: bold;
+}
+
+.tab{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.favorite{
+    background-color: rgb(168, 123, 55);
+}
+
+.imagebox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.image{
+    padding: 10px;
+    width: 206px;
+    border: 2px solid aliceblue;
+    background-color: azure;
+    border-radius: 10px;
+    color: rgb(112, 10, 143);
+}
+
+img{
+    width: 177px;
+    height: 50%;
+}
+
+.textContainer{
+    text-align: center;
+}
+
+.fa{
+    cursor: pointer;
+}
+
+h5{
+    text-align: center;
+    margin: 1px;
+}
+
+.vote_count{
+    display: flex;
+    justify-content: space-around;
+}
+
+.page{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#prev{
+    background-color: crimson;
+    font-weight: bold;
+
+}
+
+#current{
+    background-color: blue;
+    font-weight: bold;
+    width: 8rem;
+}
+
+.all{
+    background-color: darkblue;
+}
