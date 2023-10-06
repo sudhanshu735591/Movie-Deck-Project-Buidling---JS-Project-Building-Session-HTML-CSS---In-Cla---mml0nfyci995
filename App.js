@@ -12,12 +12,13 @@ next.addEventListener("click", ()=>{
     if(count===100){
         count=100;
     }
-    count++;
-    imagebox.innerHTML ="";
-    console.log("count is", count);
-    fetchApi();
-    current.textContent = `Current Page: ${count}`;
-
+    else{
+        count++;
+        imagebox.innerHTML ="";
+        console.log("count is", count);
+        fetchApi();
+        current.textContent = `Current Page: ${count}`;
+    }
 })
 
 prev.addEventListener("click", ()=>{
