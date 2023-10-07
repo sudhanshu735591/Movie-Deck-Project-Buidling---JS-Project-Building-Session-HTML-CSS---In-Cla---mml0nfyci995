@@ -163,6 +163,7 @@ favorite.addEventListener("click", (value) => {
 function allData(){
     let all = document.getElementById("all");
     all.addEventListener("click", () => {
+        imagebox.innerHTML = "";
         fetchApi();
     })
 }

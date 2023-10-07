@@ -66,6 +66,10 @@ button{
     font-weight: bold;
 }
 
+button:hover{
+    transform: scale(1.1);
+}
+
 .sortBox{
     display: flex;
     justify-content: center;
