@@ -2,7 +2,7 @@
 let imagebox = document.getElementById("imagebox");
 let count = 1;
 
-
+let heart;
 
 let next = document.getElementById("next");
 let prev = document.getElementById("prev");
@@ -68,7 +68,8 @@ function render(res) {
                 </div> 
             </div>`
     });
-}
+    heart = document.getElementById("heart")
+    }
 
 
 
@@ -79,6 +80,7 @@ function addToFavourate(value) {
     filterData = arr.filter((val) => val.id === value);
     filterData.forEach((val) => {
         favArr = [...favArr, val];
+
     })
 }
 
@@ -134,7 +136,7 @@ sortByDate.addEventListener("click", async () => {
 
 let favorite = document.getElementById("favorite");
 
-favorite.addEventListener("click", (value) => {
+favorite.addEventListener("click", (e) => {
     imagebox.innerHTML = "";
 
     favArr.forEach((value) => {
@@ -147,16 +149,16 @@ favorite.addEventListener("click", (value) => {
         <div class="textContainer">
             <div class="vote_count">
                 <div class = "vote">Votes : "${value.vote_count}"</div>
-                <i class="fa fa-heart-o heart" id="heart" onclick = "addToFavourate(${value.id})"></i>
+                <i class="fa fa-solid fa-heart" id="heart" onclick = "addToFavourate(${value.id})"></i>
             </div>
             <div >Rating : ${value.vote_average}</div>
             <div >Date : ${value.vote_average}</div>
-
         </div>
         </div> 
     </div>`
     })
 })
+
 
 
 
