@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Movie_Deck_Application</h1>
+        <h1><span>Movie_</span>Deck_<span>Application</span></h1>
     </div>
      
     <div class="searchBox">
@@ -22,14 +22,19 @@
     </div>
 
     <div class="sortBox">
-        <button class="sortByDate">Sort by date (oldest to latest)</button>
+        <button class="sortByDate" id="sortByDate">Sort by date (oldest to latest)</button>
         <button class="sortByRating" id="sortByRating">Sort by rating (least to most)</button>
     </div>
 
     <div class="tab">
         <button class="all font" id="all">All</button>
-        <button class="favorite font" id="favorite">Favorite</button>
+        <button class="favorite font" id="favorite">Favorite ♥</button>
     </div>
+   
+
+
+    <div class="imagebox" id="imagebox"></div>
+
     <div class="page">
         <button class="prev" id="prev">Previous</button>
         <button class="current" id="current">Current Page: 1</button>
@@ -37,10 +42,9 @@
     </div>
 
 
-    <div class="imagebox" id="imagebox"></div>
-
-
-
+    <div class="footer">
+        <div class="footerText">© 2023 Movie Deck</div>
+    </div>
 
     <script src="./App.js"></script>
 </body>

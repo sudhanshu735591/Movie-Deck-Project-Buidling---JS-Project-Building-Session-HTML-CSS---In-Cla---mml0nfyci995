@@ -8,9 +8,35 @@ body{
     box-sizing: border-box;
 }
 
+h1 {
+    color: hsl(0, 0%, 28%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+
+h1 span {
+    transition: 0.5s ease-out;
+}
+
+h1:hover span:nth-child(1) {
+    margin-right: 5px;
+}
+
+h1:hover span:nth-child(2) {
+    margin-left: 30px;
+}
+
+h1:hover span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
 
 .container{
-    background-color: darkblue;
+    background-color: black;
     padding: 4px;
     color:  white;
     font-size: 1.25rem;
@@ -22,7 +48,6 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    
 }
 
 .inputbox{
@@ -39,6 +64,7 @@ button{
     background: rgb(33, 44, 33);
     color: white;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .sortBox{
@@ -52,12 +78,15 @@ button{
     width: 13rem;
     background: red;
     font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .sortByRating{
     width: 13rem;
-    background: red;
+    background: blue;
+    border: none;
     font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .font{
@@ -72,7 +101,9 @@ button{
 }
 
 .favorite{
-    background-color: rgb(168, 123, 55);
+    background-color: rgb(167, 232, 27);
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .imagebox{
@@ -141,4 +172,21 @@ h5{
 
 .all{
     background-color: darkblue;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 856px) {
+    h1 {
+        font-size: 16px;
+    }
 }
