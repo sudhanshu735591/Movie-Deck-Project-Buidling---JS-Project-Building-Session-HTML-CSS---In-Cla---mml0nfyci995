@@ -63,6 +63,7 @@ function render(res) {
                         <i class="fa fa-heart-o" id="heart" onclick = "addToFavourate(${value.id})"></i>
                     </div>
                     <div >Rating : ${value.vote_average}</div>
+                    <div >Release_Date : ${value.release_date}</div>
                 </div>
                 </div> 
             </div>`
@@ -149,6 +150,8 @@ favorite.addEventListener("click", (value) => {
                 <i class="fa fa-heart-o heart" id="heart" onclick = "addToFavourate(${value.id})"></i>
             </div>
             <div >Rating : ${value.vote_average}</div>
+            <div >Date : ${value.vote_average}</div>
+
         </div>
         </div> 
     </div>`
