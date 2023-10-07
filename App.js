@@ -151,6 +151,40 @@ all.addEventListener("click", ()=>{
 
 
 
+let search = document.getElementById("search");
+let filterSearch ;
+
+search.addEventListener("click", async()=>{
+    let inputbox = document.getElementById("inputbox");
+    console.log(arr);
+    filterSearch = arr.filter((val)=>val.original_title.toUpperCase().includes(inputbox.value.toUpperCase()));
+    console.log("filterSearch", filterSearch);
+
+
+    imagebox.innerHTML = "";
+
+    filterSearch.forEach((value)=>{
+        const imageUrl = `https://image.tmdb.org/t/p/w500/${value.backdrop_path}`;
+
+        imagebox.innerHTML +=
+        `<div class="image">
+            <div><img src = "${imageUrl}" /></div>
+            <h5>${value.original_title}</h5> 
+            <div class="textContainer">
+                <div class="vote_count">
+                    <div class = "vote">Votes : "${value.vote_count}"</div>
+                    <i class="fa fa-heart-o heart" id="heart" onclick = "addToFavourate(${value.id})"></i>
+                </div>
+                <div >Rating : ${value.vote_average}</div>
+            </div>
+            </div> 
+        </div>`
+
+    })
+
+})
+
+
 
 
 
